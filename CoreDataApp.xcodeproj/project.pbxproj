@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0425B3C120F489410037DA5F /* CoreDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425B3C020F489410037DA5F /* CoreDataWrapper.swift */; };
+		044C1C4F20ECB38C00AC5BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C4E20ECB38C00AC5BD7 /* AppDelegate.swift */; };
+		044C1C5120ECB38C00AC5BD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C5020ECB38C00AC5BD7 /* ViewController.swift */; };
+		044C1C5420ECB38C00AC5BD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044C1C5220ECB38C00AC5BD7 /* Main.storyboard */; };
+		044C1C5720ECB38C00AC5BD7 /* CoreDataApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C5520ECB38C00AC5BD7 /* CoreDataApp.xcdatamodeld */; };
+		044C1C5920ECB38F00AC5BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044C1C5820ECB38F00AC5BD7 /* Assets.xcassets */; };
+		044C1C5C20ECB38F00AC5BD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044C1C5A20ECB38F00AC5BD7 /* LaunchScreen.storyboard */; };
+		044C1C9120ECB48E00AC5BD7 /* MDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C6920ECB48D00AC5BD7 /* MDButton.m */; };
+		044C1C9220ECB48E00AC5BD7 /* MDCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C6B20ECB48E00AC5BD7 /* MDCalendar.m */; };
+		044C1C9320ECB48E00AC5BD7 /* MDCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C6D20ECB48E00AC5BD7 /* MDCalendarCell.m */; };
+		044C1C9420ECB48E00AC5BD7 /* MDCalendarDateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C6F20ECB48E00AC5BD7 /* MDCalendarDateHeader.m */; };
+		044C1C9520ECB48E00AC5BD7 /* MDCalendarHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C7120ECB48E00AC5BD7 /* MDCalendarHeader.m */; };
+		044C1C9620ECB48E00AC5BD7 /* MDCalendarYearSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C7320ECB48E00AC5BD7 /* MDCalendarYearSelector.m */; };
+		044C1C9720ECB48E00AC5BD7 /* MDCalendarYearSelectorViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C7520ECB48E00AC5BD7 /* MDCalendarYearSelectorViewCell.m */; };
+		044C1C9820ECB48E00AC5BD7 /* MDDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C7820ECB48E00AC5BD7 /* MDDatePicker.m */; };
+		044C1C9920ECB48E00AC5BD7 /* MDDatePickerDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C7A20ECB48E00AC5BD7 /* MDDatePickerDialog.m */; };
+		044C1C9A20ECB48E00AC5BD7 /* MDDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C7C20ECB48E00AC5BD7 /* MDDeviceHelper.m */; };
+		044C1C9B20ECB48E00AC5BD7 /* MDRippleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C7E20ECB48E00AC5BD7 /* MDRippleLayer.m */; };
+		044C1C9C20ECB48E00AC5BD7 /* MDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C8020ECB48E00AC5BD7 /* MDTableViewCell.m */; };
+		044C1C9D20ECB48E00AC5BD7 /* MDTouchGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C8220ECB48E00AC5BD7 /* MDTouchGestureRecognizer.m */; };
+		044C1C9E20ECB48E00AC5BD7 /* NSCalendarHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C8420ECB48E00AC5BD7 /* NSCalendarHelper.m */; };
+		044C1C9F20ECB48E00AC5BD7 /* NSDate+MDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C8620ECB48E00AC5BD7 /* NSDate+MDExtension.m */; };
+		044C1CA020ECB48E00AC5BD7 /* NSDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C8820ECB48E00AC5BD7 /* NSDateHelper.m */; };
+		044C1CA120ECB48E00AC5BD7 /* UIColorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C8A20ECB48E00AC5BD7 /* UIColorHelper.m */; };
+		044C1CA220ECB48E00AC5BD7 /* UIFontHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C8C20ECB48E00AC5BD7 /* UIFontHelper.m */; };
+		044C1CA320ECB48E00AC5BD7 /* UIView+MDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C8E20ECB48E00AC5BD7 /* UIView+MDExtension.m */; };
+		044C1CA420ECB48E00AC5BD7 /* UIViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C1C9020ECB48E00AC5BD7 /* UIViewHelper.m */; };
+		044C1CA820ECBA4400AC5BD7 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C1CA720ECBA4400AC5BD7 /* ListViewController.swift */; };
+		044C1CAB20ECBDAD00AC5BD7 /* ListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C1CAA20ECBDAD00AC5BD7 /* ListTableCell.swift */; };
+		044C1CAE20ECC57400AC5BD7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C1CAD20ECC57400AC5BD7 /* CoreData.framework */; };
+		044C1CB020ECE59D00AC5BD7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C1CAF20ECE59D00AC5BD7 /* Common.swift */; };
+		0461C2F120F369D000686474 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461C2F020F369D000686474 /* Const.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0425B3C020F489410037DA5F /* CoreDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWrapper.swift; sourceTree = "<group>"; };
+		044C1C4B20ECB38C00AC5BD7 /* CoreDataApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		044C1C4E20ECB38C00AC5BD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		044C1C5020ECB38C00AC5BD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		044C1C5320ECB38C00AC5BD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		044C1C5620ECB38C00AC5BD7 /* CoreDataApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataApp.xcdatamodel; sourceTree = "<group>"; };
+		044C1C5820ECB38F00AC5BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		044C1C5B20ECB38F00AC5BD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		044C1C5D20ECB38F00AC5BD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044C1C6820ECB48D00AC5BD7 /* MDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDButton.h; sourceTree = "<group>"; };
+		044C1C6920ECB48D00AC5BD7 /* MDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDButton.m; sourceTree = "<group>"; };
+		044C1C6A20ECB48D00AC5BD7 /* MDCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCalendar.h; sourceTree = "<group>"; };
+		044C1C6B20ECB48E00AC5BD7 /* MDCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCalendar.m; sourceTree = "<group>"; };
+		044C1C6C20ECB48E00AC5BD7 /* MDCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCalendarCell.h; sourceTree = "<group>"; };
+		044C1C6D20ECB48E00AC5BD7 /* MDCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCalendarCell.m; sourceTree = "<group>"; };
+		044C1C6E20ECB48E00AC5BD7 /* MDCalendarDateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCalendarDateHeader.h; sourceTree = "<group>"; };
+		044C1C6F20ECB48E00AC5BD7 /* MDCalendarDateHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCalendarDateHeader.m; sourceTree = "<group>"; };
+		044C1C7020ECB48E00AC5BD7 /* MDCalendarHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCalendarHeader.h; sourceTree = "<group>"; };
+		044C1C7120ECB48E00AC5BD7 /* MDCalendarHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCalendarHeader.m; sourceTree = "<group>"; };
+		044C1C7220ECB48E00AC5BD7 /* MDCalendarYearSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCalendarYearSelector.h; sourceTree = "<group>"; };
+		044C1C7320ECB48E00AC5BD7 /* MDCalendarYearSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCalendarYearSelector.m; sourceTree = "<group>"; };
+		044C1C7420ECB48E00AC5BD7 /* MDCalendarYearSelectorViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCalendarYearSelectorViewCell.h; sourceTree = "<group>"; };
+		044C1C7520ECB48E00AC5BD7 /* MDCalendarYearSelectorViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCalendarYearSelectorViewCell.m; sourceTree = "<group>"; };
+		044C1C7620ECB48E00AC5BD7 /* MDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDConstants.h; sourceTree = "<group>"; };
+		044C1C7720ECB48E00AC5BD7 /* MDDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDatePicker.h; sourceTree = "<group>"; };
+		044C1C7820ECB48E00AC5BD7 /* MDDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDatePicker.m; sourceTree = "<group>"; };
+		044C1C7920ECB48E00AC5BD7 /* MDDatePickerDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDatePickerDialog.h; sourceTree = "<group>"; };
+		044C1C7A20ECB48E00AC5BD7 /* MDDatePickerDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDatePickerDialog.m; sourceTree = "<group>"; };
+		044C1C7B20ECB48E00AC5BD7 /* MDDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDeviceHelper.h; sourceTree = "<group>"; };
+		044C1C7C20ECB48E00AC5BD7 /* MDDeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDeviceHelper.m; sourceTree = "<group>"; };
+		044C1C7D20ECB48E00AC5BD7 /* MDRippleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRippleLayer.h; sourceTree = "<group>"; };
+		044C1C7E20ECB48E00AC5BD7 /* MDRippleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRippleLayer.m; sourceTree = "<group>"; };
+		044C1C7F20ECB48E00AC5BD7 /* MDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDTableViewCell.h; sourceTree = "<group>"; };
+		044C1C8020ECB48E00AC5BD7 /* MDTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDTableViewCell.m; sourceTree = "<group>"; };
+		044C1C8120ECB48E00AC5BD7 /* MDTouchGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDTouchGestureRecognizer.h; sourceTree = "<group>"; };
+		044C1C8220ECB48E00AC5BD7 /* MDTouchGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDTouchGestureRecognizer.m; sourceTree = "<group>"; };
+		044C1C8320ECB48E00AC5BD7 /* NSCalendarHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCalendarHelper.h; sourceTree = "<group>"; };
+		044C1C8420ECB48E00AC5BD7 /* NSCalendarHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCalendarHelper.m; sourceTree = "<group>"; };
+		044C1C8520ECB48E00AC5BD7 /* NSDate+MDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MDExtension.h"; sourceTree = "<group>"; };
+		044C1C8620ECB48E00AC5BD7 /* NSDate+MDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MDExtension.m"; sourceTree = "<group>"; };
+		044C1C8720ECB48E00AC5BD7 /* NSDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateHelper.h; sourceTree = "<group>"; };
+		044C1C8820ECB48E00AC5BD7 /* NSDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateHelper.m; sourceTree = "<group>"; };
+		044C1C8920ECB48E00AC5BD7 /* UIColorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorHelper.h; sourceTree = "<group>"; };
+		044C1C8A20ECB48E00AC5BD7 /* UIColorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorHelper.m; sourceTree = "<group>"; };
+		044C1C8B20ECB48E00AC5BD7 /* UIFontHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFontHelper.h; sourceTree = "<group>"; };
+		044C1C8C20ECB48E00AC5BD7 /* UIFontHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFontHelper.m; sourceTree = "<group>"; };
+		044C1C8D20ECB48E00AC5BD7 /* UIView+MDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MDExtension.h"; sourceTree = "<group>"; };
+		044C1C8E20ECB48E00AC5BD7 /* UIView+MDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MDExtension.m"; sourceTree = "<group>"; };
+		044C1C8F20ECB48E00AC5BD7 /* UIViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewHelper.h; sourceTree = "<group>"; };
+		044C1C9020ECB48E00AC5BD7 /* UIViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewHelper.m; sourceTree = "<group>"; };
+		044C1CA620ECB54800AC5BD7 /* CoreDataApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		044C1CA720ECBA4400AC5BD7 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		044C1CAA20ECBDAD00AC5BD7 /* ListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableCell.swift; sourceTree = "<group>"; };
+		044C1CAD20ECC57400AC5BD7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		044C1CAF20ECE59D00AC5BD7 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		0461C2F020F369D000686474 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		044C1C4820ECB38C00AC5BD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044C1CAE20ECC57400AC5BD7 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		044C1C4220ECB38C00AC5BD7 = {
+			isa = PBXGroup;
+			children = (
+				044C1C4D20ECB38C00AC5BD7 /* CoreDataApp */,
+				044C1C4C20ECB38C00AC5BD7 /* Products */,
+				044C1CAC20ECC57400AC5BD7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		044C1C4C20ECB38C00AC5BD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				044C1C4B20ECB38C00AC5BD7 /* CoreDataApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		044C1C4D20ECB38C00AC5BD7 /* CoreDataApp */ = {
+			isa = PBXGroup;
+			children = (
+				044C1C4E20ECB38C00AC5BD7 /* AppDelegate.swift */,
+				044C1C6620ECB48D00AC5BD7 /* ControlFramework */,
+				044C1C6320ECB3C400AC5BD7 /* Common */,
+				044C1C6420ECB3C500AC5BD7 /* Model */,
+				044C1C6520ECB3C500AC5BD7 /* ViewControllers */,
+				044C1C5220ECB38C00AC5BD7 /* Main.storyboard */,
+				044C1C5820ECB38F00AC5BD7 /* Assets.xcassets */,
+				044C1C5A20ECB38F00AC5BD7 /* LaunchScreen.storyboard */,
+				044C1C5D20ECB38F00AC5BD7 /* Info.plist */,
+				044C1C5520ECB38C00AC5BD7 /* CoreDataApp.xcdatamodeld */,
+				044C1CA620ECB54800AC5BD7 /* CoreDataApp-Bridging-Header.h */,
+			);
+			path = CoreDataApp;
+			sourceTree = "<group>";
+		};
+		044C1C6320ECB3C400AC5BD7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				044C1CAF20ECE59D00AC5BD7 /* Common.swift */,
+				0461C2F020F369D000686474 /* Const.swift */,
+				0425B3C020F489410037DA5F /* CoreDataWrapper.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		044C1C6420ECB3C500AC5BD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		044C1C6520ECB3C500AC5BD7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				044C1CA920ECBD8F00AC5BD7 /* Cell */,
+				044C1C5020ECB38C00AC5BD7 /* ViewController.swift */,
+				044C1CA720ECBA4400AC5BD7 /* ListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		044C1C6620ECB48D00AC5BD7 /* ControlFramework */ = {
+			isa = PBXGroup;
+			children = (
+				044C1C6720ECB48D00AC5BD7 /* MDDatePicker */,
+			);
+			path = ControlFramework;
+			sourceTree = "<group>";
+		};
+		044C1C6720ECB48D00AC5BD7 /* MDDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				044C1C6820ECB48D00AC5BD7 /* MDButton.h */,
+				044C1C6920ECB48D00AC5BD7 /* MDButton.m */,
+				044C1C6A20ECB48D00AC5BD7 /* MDCalendar.h */,
+				044C1C6B20ECB48E00AC5BD7 /* MDCalendar.m */,
+				044C1C6C20ECB48E00AC5BD7 /* MDCalendarCell.h */,
+				044C1C6D20ECB48E00AC5BD7 /* MDCalendarCell.m */,
+				044C1C6E20ECB48E00AC5BD7 /* MDCalendarDateHeader.h */,
+				044C1C6F20ECB48E00AC5BD7 /* MDCalendarDateHeader.m */,
+				044C1C7020ECB48E00AC5BD7 /* MDCalendarHeader.h */,
+				044C1C7120ECB48E00AC5BD7 /* MDCalendarHeader.m */,
+				044C1C7220ECB48E00AC5BD7 /* MDCalendarYearSelector.h */,
+				044C1C7320ECB48E00AC5BD7 /* MDCalendarYearSelector.m */,
+				044C1C7420ECB48E00AC5BD7 /* MDCalendarYearSelectorViewCell.h */,
+				044C1C7520ECB48E00AC5BD7 /* MDCalendarYearSelectorViewCell.m */,
+				044C1C7620ECB48E00AC5BD7 /* MDConstants.h */,
+				044C1C7720ECB48E00AC5BD7 /* MDDatePicker.h */,
+				044C1C7820ECB48E00AC5BD7 /* MDDatePicker.m */,
+				044C1C7920ECB48E00AC5BD7 /* MDDatePickerDialog.h */,
+				044C1C7A20ECB48E00AC5BD7 /* MDDatePickerDialog.m */,
+				044C1C7B20ECB48E00AC5BD7 /* MDDeviceHelper.h */,
+				044C1C7C20ECB48E00AC5BD7 /* MDDeviceHelper.m */,
+				044C1C7D20ECB48E00AC5BD7 /* MDRippleLayer.h */,
+				044C1C7E20ECB48E00AC5BD7 /* MDRippleLayer.m */,
+				044C1C7F20ECB48E00AC5BD7 /* MDTableViewCell.h */,
+				044C1C8020ECB48E00AC5BD7 /* MDTableViewCell.m */,
+				044C1C8120ECB48E00AC5BD7 /* MDTouchGestureRecognizer.h */,
+				044C1C8220ECB48E00AC5BD7 /* MDTouchGestureRecognizer.m */,
+				044C1C8320ECB48E00AC5BD7 /* NSCalendarHelper.h */,
+				044C1C8420ECB48E00AC5BD7 /* NSCalendarHelper.m */,
+				044C1C8520ECB48E00AC5BD7 /* NSDate+MDExtension.h */,
+				044C1C8620ECB48E00AC5BD7 /* NSDate+MDExtension.m */,
+				044C1C8720ECB48E00AC5BD7 /* NSDateHelper.h */,
+				044C1C8820ECB48E00AC5BD7 /* NSDateHelper.m */,
+				044C1C8920ECB48E00AC5BD7 /* UIColorHelper.h */,
+				044C1C8A20ECB48E00AC5BD7 /* UIColorHelper.m */,
+				044C1C8B20ECB48E00AC5BD7 /* UIFontHelper.h */,
+				044C1C8C20ECB48E00AC5BD7 /* UIFontHelper.m */,
+				044C1C8D20ECB48E00AC5BD7 /* UIView+MDExtension.h */,
+				044C1C8E20ECB48E00AC5BD7 /* UIView+MDExtension.m */,
+				044C1C8F20ECB48E00AC5BD7 /* UIViewHelper.h */,
+				044C1C9020ECB48E00AC5BD7 /* UIViewHelper.m */,
+			);
+			path = MDDatePicker;
+			sourceTree = "<group>";
+		};
+		044C1CA920ECBD8F00AC5BD7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				044C1CAA20ECBDAD00AC5BD7 /* ListTableCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		044C1CAC20ECC57400AC5BD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				044C1CAD20ECC57400AC5BD7 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		044C1C4A20ECB38C00AC5BD7 /* CoreDataApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044C1C6020ECB38F00AC5BD7 /* Build configuration list for PBXNativeTarget "CoreDataApp" */;
+			buildPhases = (
+				044C1C4720ECB38C00AC5BD7 /* Sources */,
+				044C1C4820ECB38C00AC5BD7 /* Frameworks */,
+				044C1C4920ECB38C00AC5BD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataApp;
+			productName = CoreDataApp;
+			productReference = 044C1C4B20ECB38C00AC5BD7 /* CoreDataApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		044C1C4320ECB38C00AC5BD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Global Garner";
+				TargetAttributes = {
+					044C1C4A20ECB38C00AC5BD7 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 044C1C4620ECB38C00AC5BD7 /* Build configuration list for PBXProject "CoreDataApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 044C1C4220ECB38C00AC5BD7;
+			productRefGroup = 044C1C4C20ECB38C00AC5BD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				044C1C4A20ECB38C00AC5BD7 /* CoreDataApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		044C1C4920ECB38C00AC5BD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044C1C5C20ECB38F00AC5BD7 /* LaunchScreen.storyboard in Resources */,
+				044C1C5920ECB38F00AC5BD7 /* Assets.xcassets in Resources */,
+				044C1C5420ECB38C00AC5BD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		044C1C4720ECB38C00AC5BD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044C1C9D20ECB48E00AC5BD7 /* MDTouchGestureRecognizer.m in Sources */,
+				044C1C9720ECB48E00AC5BD7 /* MDCalendarYearSelectorViewCell.m in Sources */,
+				044C1CB020ECE59D00AC5BD7 /* Common.swift in Sources */,
+				044C1C9420ECB48E00AC5BD7 /* MDCalendarDateHeader.m in Sources */,
+				044C1CA120ECB48E00AC5BD7 /* UIColorHelper.m in Sources */,
+				044C1C9520ECB48E00AC5BD7 /* MDCalendarHeader.m in Sources */,
+				044C1C5120ECB38C00AC5BD7 /* ViewController.swift in Sources */,
+				044C1C9920ECB48E00AC5BD7 /* MDDatePickerDialog.m in Sources */,
+				0461C2F120F369D000686474 /* Const.swift in Sources */,
+				044C1CA320ECB48E00AC5BD7 /* UIView+MDExtension.m in Sources */,
+				044C1CA020ECB48E00AC5BD7 /* NSDateHelper.m in Sources */,
+				044C1C5720ECB38C00AC5BD7 /* CoreDataApp.xcdatamodeld in Sources */,
+				044C1C9320ECB48E00AC5BD7 /* MDCalendarCell.m in Sources */,
+				044C1CAB20ECBDAD00AC5BD7 /* ListTableCell.swift in Sources */,
+				044C1C9620ECB48E00AC5BD7 /* MDCalendarYearSelector.m in Sources */,
+				044C1C9120ECB48E00AC5BD7 /* MDButton.m in Sources */,
+				044C1CA420ECB48E00AC5BD7 /* UIViewHelper.m in Sources */,
+				044C1CA820ECBA4400AC5BD7 /* ListViewController.swift in Sources */,
+				044C1C9A20ECB48E00AC5BD7 /* MDDeviceHelper.m in Sources */,
+				044C1C9B20ECB48E00AC5BD7 /* MDRippleLayer.m in Sources */,
+				0425B3C120F489410037DA5F /* CoreDataWrapper.swift in Sources */,
+				044C1C4F20ECB38C00AC5BD7 /* AppDelegate.swift in Sources */,
+				044C1C9820ECB48E00AC5BD7 /* MDDatePicker.m in Sources */,
+				044C1C9C20ECB48E00AC5BD7 /* MDTableViewCell.m in Sources */,
+				044C1C9F20ECB48E00AC5BD7 /* NSDate+MDExtension.m in Sources */,
+				044C1C9E20ECB48E00AC5BD7 /* NSCalendarHelper.m in Sources */,
+				044C1C9220ECB48E00AC5BD7 /* MDCalendar.m in Sources */,
+				044C1CA220ECB48E00AC5BD7 /* UIFontHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		044C1C5220ECB38C00AC5BD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044C1C5320ECB38C00AC5BD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		044C1C5A20ECB38F00AC5BD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044C1C5B20ECB38F00AC5BD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		044C1C5E20ECB38F00AC5BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		044C1C5F20ECB38F00AC5BD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		044C1C6120ECB38F00AC5BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFL6S3E8HT;
+				INFOPLIST_FILE = CoreDataApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Global-Garner.CoreDataApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mac/Desktop/CoreDataApp/CoreDataApp/CoreDataApp-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		044C1C6220ECB38F00AC5BD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFL6S3E8HT;
+				INFOPLIST_FILE = CoreDataApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Global-Garner.CoreDataApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mac/Desktop/CoreDataApp/CoreDataApp/CoreDataApp-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		044C1C4620ECB38C00AC5BD7 /* Build configuration list for PBXProject "CoreDataApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044C1C5E20ECB38F00AC5BD7 /* Debug */,
+				044C1C5F20ECB38F00AC5BD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044C1C6020ECB38F00AC5BD7 /* Build configuration list for PBXNativeTarget "CoreDataApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044C1C6120ECB38F00AC5BD7 /* Debug */,
+				044C1C6220ECB38F00AC5BD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		044C1C5520ECB38C00AC5BD7 /* CoreDataApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				044C1C5620ECB38C00AC5BD7 /* CoreDataApp.xcdatamodel */,
+			);
+			currentVersion = 044C1C5620ECB38C00AC5BD7 /* CoreDataApp.xcdatamodel */;
+			path = CoreDataApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 044C1C4320ECB38C00AC5BD7 /* Project object */;
+}
